@@ -30,8 +30,8 @@ A React-based task management application that allows users to create, update, a
 1. Clone the repository:
 
    
-   git clone https://github.com/<your-username>/<repo-name>.git
-   cd <repo-name>
+   git clone https://github.com/abiA2711/task-manager-frontend.git
+   cd task-manager-frontend
    npm install
    npm start
 

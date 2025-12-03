@@ -1,13 +1,13 @@
 import axios from "axios";
 
 // Base URL 
-// const API = axios.create({
-//   baseURL: "https://task-manager-backend-te9k.onrender.com/api/auth", 
-// });
-
 const API = axios.create({
-  baseURL: "http://localhost:5000/api/auth", 
+  baseURL: "https://task-manager-backend-te9k.onrender.com/api/auth", 
 });
+
+// const API = axios.create({
+//   baseURL: "http://localhost:5000/api/auth", 
+// });
 
 API.interceptors.request.use((config) => {
   const token = localStorage.getItem("token");

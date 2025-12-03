@@ -165,7 +165,8 @@ export default function Register() {
   sx={{
     display: "flex",
     flexDirection: { xs: "column", md: "row" },  
-    height: "100vh",
+    height: "auto",
+    minHeight:"100vh",
     backgroundColor: theme.palette.mode === "dark" ? "#0d0d0d" : "#ffffff",
     color: theme.palette.text.primary,
     // mt: 7,
@@ -176,7 +177,8 @@ export default function Register() {
      <Box
   sx={{
     width: { xs: "100%", md: "50%" },
-    height: { xs: "40vh", md: "100%" },
+    // height: { xs: "40vh", md: "100%" },
+    height: { xs: "auto", md: "100%" },
     display: "flex",
     justifyContent: "center",
     alignItems: "center",

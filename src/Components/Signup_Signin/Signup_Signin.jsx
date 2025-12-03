@@ -162,30 +162,33 @@ export default function Register() {
   return (
 
     <Box
-      sx={{
-        display: "flex",
-        height: "100vh",
-        backgroundColor:
-          theme.palette.mode === "dark" ? "#0d0d0d" : "#ffffff",
-        color: theme.palette.text.primary,
-        mt: 8, // BELOW NAVBAR
-      }}
-    >
+  sx={{
+    display: "flex",
+    flexDirection: { xs: "column", md: "row" },  
+    height: "100vh",
+    backgroundColor: theme.palette.mode === "dark" ? "#0d0d0d" : "#ffffff",
+    color: theme.palette.text.primary,
+    mt: 8,
+  }}
+>
+
       {/* LEFT SIDE IMAGE */}
-      <Box
-        sx={{
-          width: "50%",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          backgroundColor:
-            theme.palette.mode === "dark" ? "#1a1a1a" : "#f5f5f5",
-          borderRight:
-            theme.palette.mode === "dark"
-              ? "1px solid #333"
-              : "1px solid #ddd",
-        }}
-      >
+     <Box
+  sx={{
+    width: { xs: "100%", md: "50%" },
+    height: { xs: "40vh", md: "100%" },
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor:
+      theme.palette.mode === "dark" ? "#1a1a1a" : "#f5f5f5",
+    borderRight:
+      theme.palette.mode === "dark"
+        ? { md: "1px solid #333" }
+        : { md: "1px solid #ddd" },
+  }}
+>
+
         <img
           src={calenderImage}
           alt="calendar"
@@ -200,14 +203,15 @@ export default function Register() {
 
       {/* RIGHT SIDE FORM */}
       <Box
-        sx={{
-          width: "50%",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          p: 3,
-        }}
-      >
+  sx={{
+    width: { xs: "100%", md: "50%" },
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    p: { xs: 2, md: 3 },
+  }}
+>
+
         <Box
           sx={{
             width: "80%",

@@ -152,7 +152,7 @@ export default function Navbar({ setThemeMode }) {
               }}
               transformOrigin={{ vertical: "top", horizontal: "right" }}
             >
-              <MenuItem onClick={handleLogout}>Logout</MenuItem>
+              <MenuItem onClick={handleLogout}>SignOut</MenuItem>
             </Menu>
           </>
         )}

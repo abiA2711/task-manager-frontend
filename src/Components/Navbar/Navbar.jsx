@@ -26,7 +26,7 @@ export default function Navbar({ setThemeMode }) {
       profileImage = null;
 
     if (profileImage && !profileImage.startsWith("http")) {
-      profileImage = `http://localhost:5000/${profileImage}`;
+      profileImage = `https://task-manager-backend-te9k.onrender.com/${profileImage}`;
     }
 
     return { name, profileImage };

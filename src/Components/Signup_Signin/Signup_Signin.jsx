@@ -111,7 +111,7 @@ export default function Register() {
         localStorage.setItem("name", data.user.fullName);
         localStorage.setItem("email", data.user.email);
         const profileImage = data.user.profileImage
-          ? `http://localhost:5000${data.user.profileImage}`
+          ? `https://task-manager-backend-te9k.onrender.com${data.user.profileImage}`
           : null;
 
         localStorage.setItem("profileImage", profileImage);

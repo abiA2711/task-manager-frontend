@@ -174,33 +174,53 @@ export default function Register() {
 >
 
       {/* LEFT SIDE IMAGE */}
-     <Box
+    <Box
   sx={{
     width: { xs: "100%", md: "50%" },
-    // height: { xs: "40vh", md: "100%" },
-    height: { xs: "auto", md: "100%" },
+
+   
+    height: { xs: "auto", md: "100vh" },
+
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
+
     backgroundColor:
       theme.palette.mode === "dark" ? "#1a1a1a" : "#f5f5f5",
-    borderRight:
-      theme.palette.mode === "dark"
-        ? { md: "1px solid #333" }
-        : { md: "1px solid #ddd" },
+
+    
+    borderRight: {
+      md:
+        theme.palette.mode === "dark"
+          ? "1px solid #333"
+          : "1px solid #ddd",
+    },
+
+    
+    px: { xs: 1, md: 4 },
+    py: { xs: 2, md: 4 },
   }}
 >
+  <img
+    src={calenderImage}
+    alt="calendar"
+    style={{
+      width: "100%",
+      height: "auto",
+      borderRadius: "12px",
+      objectFit: "contain",
 
-        <img
-          src={calenderImage}
-          alt="calendar"
-          style={{
-            width: "90%",
-            height: "auto",
-            borderRadius: "10px",
-            filter: theme.palette.mode === "dark" ? "brightness(0.8)" : "none",
-          }}
-        /> </Box>
+      // ⭐ Dark mode brightness
+      filter:
+        theme.palette.mode === "dark" ? "brightness(0.85)" : "none",
+
+      // ⭐ Mobile-only: make image smaller (90% of width)
+      maxWidth: "90%",
+    }}
+  />
+</Box>
+
+
 
 
       {/* RIGHT SIDE FORM */}

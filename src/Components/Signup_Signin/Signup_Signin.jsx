@@ -168,7 +168,7 @@ export default function Register() {
     height: "100vh",
     backgroundColor: theme.palette.mode === "dark" ? "#0d0d0d" : "#ffffff",
     color: theme.palette.text.primary,
-    mt: 8,
+    // mt: 7,
   }}
 >
 

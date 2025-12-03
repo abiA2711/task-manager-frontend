@@ -22,6 +22,7 @@ overflowX: "hidden",
 margin: 0,
 padding: 0,
 backgroundColor: "background.default",
+  pt: { xs: "56px", md: "64px" },
 }}
 >
     <ThemeProvider theme={theme}>

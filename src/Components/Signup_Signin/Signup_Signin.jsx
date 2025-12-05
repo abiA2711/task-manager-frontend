@@ -150,7 +150,7 @@ export default function Register() {
         setProfile(null)
         setTimeout(() => {
           setIsSignIn(true);
-        }, 8000);
+        }, 5000);
       }
     } catch (err) {
       setError(err.response?.data?.message || "Something went wrong");
